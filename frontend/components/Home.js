@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
     const asyncfetch = async () => {
-      const request = await fetch('mymoviz-backend-git-main-oscar-s-projects-2a190a40.vercel.app/movies')
+      const request = await fetch('https://mymoviz-backend-git-main-oscar-s-projects-2a190a40.vercel.app/movies')
       const fetchFilmsFromBackEnd = await request.json()
       setMovies(fetchFilmsFromBackEnd.movies)
       console.log(fetchFilmsFromBackEnd)
